@@ -1,0 +1,10 @@
+.about-page nav{
+    text-align: center;
+}
+
+.about-page nav a{
+    font-size: xx-large;
+    color: rgb(13, 183, 129);
+    text-decoration: none;
+    font-weight: bold;
+}

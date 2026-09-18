@@ -1,0 +1,29 @@
+.practicals-page{
+    background-color: #f4f4f4;
+}
+
+.practicals-page nav1{
+    font-size: 30px;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.practicals-page nav1 a{
+    color: rgb(13, 183, 129);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.practicals-page nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.practicals-page nav a{
+    color: rgb(5, 51, 97);
+    text-decoration: none;
+    font-weight: bold;
+}

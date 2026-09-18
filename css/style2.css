@@ -1,0 +1,14 @@
+.practic1-page{
+    background-color: #f4f4f4;
+}
+
+.practic1-page section1{
+    text-align: center;
+}
+
+nav a{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    text-decoration: none;
+    color: rgb(5, 51, 97);
+}

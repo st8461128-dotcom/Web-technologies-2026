@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Лабораторна робота №1</title>
+    <link rel="stylesheet" href="css/practic2.css">
 </head>
 <body>
+    <body class="laborator1">
     <nav>
         <a href="laboratory.html">Повернутися до списку лабораторних</a>
     </nav>
     <h1>Форма реєстрації</h1>
     <form action="https://webhook.site/b4c8e8bc-5028-43f1-8e40-1898bd82d7c1" method="POST">
         <div class="form-group">
-            <label for="firstname">Ім'я користувача</label>
+            <label for="firstname" class="required">Ім'я користувача</label>
             <input
                 type="text"
                 id="firstname"
@@ -22,7 +24,7 @@
         </div>
 
         <div class="form-group">
-            <label for="lastname">Прізвище користувача</label>
+            <label for="lastname" class="required">Прізвище користувача</label>
             <input
                 type="text"
                 id="lastname"
@@ -32,7 +34,7 @@
         </div>
 
         <div class="form-group">
-            <label for="email">Електронна пошта</label>
+            <label for="email" class="required">Електронна пошта</label>
             <input
                 type="email"
                 id="email"
@@ -42,7 +44,7 @@
         </div>
 
         <div class="form-group">
-            <label for="password">Пароль</label>
+            <label for="password" class="required">Пароль</label>
             <input
                 type="password"
                 id="password"
@@ -52,7 +54,7 @@
         </div>
 
         <div class="form-group">
-            <label for="password_confirm">Підтвердження паролю</label>
+            <label for="password_confirm" class="required">Підтвердження паролю</label>
             <input 
                 type="password"
                 id="password_confirm"
@@ -71,7 +73,7 @@
 
         <div class="form-group">
             <label>Відправити</label>
-            <input type="submit" value="зареєструватися">
+                <button type="submit">Зареєструватися</button>
         </div>
     </form>
 </body>
