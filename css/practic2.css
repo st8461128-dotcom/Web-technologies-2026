@@ -16,7 +16,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--ink);
   font-family: 'Inter', -apple-system, 'Segoe UI', sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -50,6 +49,7 @@ nav a:hover {
 }
 
 h1 {
+  color: purple;
   font-family: 'Fraunces', Georgia, serif;
   font-weight: 600;
   font-size: 30px;
@@ -58,8 +58,12 @@ h1 {
   width: 100%;
   max-width: 480px;
   text-align: center;
+   box-shadow: 15px 0 0 35px rgba(14, 108, 60, 0.958);
 }
 
+p{
+  color: black;
+}
 .subtitle {
   color: var(--muted);
   font-size: 15px;
