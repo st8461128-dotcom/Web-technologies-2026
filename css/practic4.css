@@ -1,0 +1,230 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.keyboard-case{
+  background-color: rgb(175, 174, 174);
+  border: 1px solid;
+  border-radius: 14px;
+  padding-right: 15px;
+}
+
+.top-row{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background-color: rgb(224, 224, 224);
+  border-radius: 4px;
+  margin-top: 15px;
+  margin-left: 15px;
+  padding: 10px;
+}
+
+.key{
+  padding: 5px;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 13px;
+  color: #3e3d3d;
+  cursor: pointer;
+  box-shadow: 0 3px 0 #8c8c8c, 0 4px 5px rgb(0, 0, 0, 0.2);
+  transition: all 0.05s ease;
+  user-select: none;
+}
+
+.key:hover{
+  background-color: #f5f5f5;
+  border-color: #888;
+}
+
+.key:active{
+  transform: translateY(3px);
+  box-shadow: 0 0 0 #b1b1b1, inset 0 2px 4px rgb(0, 0, 0, 0.2);
+}
+
+.f-keys{
+  display: flex;
+  gap: 21px;
+  padding-left: 21px ;
+  max-width: 575px;
+}
+
+.f-keys .group{
+  display: flex;
+  gap: 18px;
+}
+
+.small-text{
+  font-size: 9px;
+  line-height: 1.1;
+}
+
+.system-keys{
+  display: flex;
+  gap: 4px;
+  
+}
+
+.status-indicators{
+  display: flex;
+  flex-direction: row;
+  gap: 26px;
+  align-items: center;
+  width: 110px;
+  justify-content: end;
+}
+
+.indicator{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+}
+
+.led{
+  width: 8px;
+  height: 8px;
+  background-color: #d1d272;
+  border-radius: 50%;
+  border: 1px solid #222;
+}
+
+.main-keyboard{
+  display: flex;
+  gap: 30px;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+
+.main-keyboard .key{
+  grid-column: span 2;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.main-section {
+  display: grid;
+  grid-template-columns: repeat(31, 15px);
+  grid-auto-rows: 38px;
+  gap: 6px;
+  background-color: #707070;
+  border-radius: 4px;
+  padding: 10px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  padding-right: 6px;
+}
+
+.key-backspace{ grid-column: span 5 !important; }
+.key-tab       { grid-column: span 3 !important; }
+.key-enter     { padding: 10px; padding-right: 67px ; flex: span 5 !important; }
+.key-caps      { grid-column: span 4 !important; }
+.key-lshift    { grid-column: span 5 !important; }
+.key-rshift    { grid-column: span 4 !important; }
+.key-ctrl      { grid-column: span 3 !important; }
+.key-alt, 
+.key-win,
+.key-menu      { grid-column: span 3 !important; }
+.key-space     { grid-column: span 10 !important; }
+
+.nav-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 122px; 
+}
+
+.nav-cluster {
+  display: grid;
+  grid-template-columns: repeat(3, 35px) !important;
+  grid-template-rows: repeat(2, 38px) !important;
+  gap: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 2px;
+  background-color: #707070;
+  border-radius: 4px;
+}
+
+.nav-cluster .key {
+  grid-column: auto !important;
+  grid-row: auto !important;
+  width: 38px !important;
+  height: 38px !important;
+}
+
+.arrow-cluster {
+  display: grid;
+  grid-template-columns: repeat(3, 36px) !important;
+  grid-template-rows: repeat(2, 38px) !important;
+  padding: 2px;
+  gap: 4px;
+  padding-bottom: 3px;
+}
+
+
+.arrow-cluster div {
+  width: 35px;
+  height: 38px;
+  padding-left: 1px;
+  background-color: rgb(175, 174, 174);
+}
+
+.arrow-cluster .key {
+  grid-column: auto !important;
+  grid-row: auto !important;
+  width: 36px !important;
+  height: 38px !important;
+}
+
+.numpad-section {
+  display: grid;
+  grid-template-columns: repeat(4, 36px); 
+  grid-auto-rows: 40px;
+  gap: 4px;
+  width: 163px; 
+  height: 230px;
+  padding-top: 7px;
+  padding-left: 5px;
+  background-color: #707070;
+  border-radius: 8px;
+}
+
+.numpad-section .key {
+  width: 100%;
+  height: 100%;
+  grid-column: span 1;
+  grid-row: span 1;
+  
+}
+
+.num-plus {
+  grid-column: 4 !important;
+  grid-row: 2 / span 2 !important; 
+}
+
+.num-enter {
+  grid-column: 4 !important;
+  grid-row: 4 / span 2 !important; 
+}
+
+.num-zero {
+  grid-column: 1 / span 2 !important;
+}

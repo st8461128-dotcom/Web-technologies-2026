@@ -367,6 +367,7 @@ hr.divider {
 
 .chips-container {
   display: flex;
+  flex-direction: column;
   gap: 12px;
   overflow-x: auto;         
   white-space: nowrap;
