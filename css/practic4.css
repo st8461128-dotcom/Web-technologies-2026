@@ -142,7 +142,7 @@ body{
 .key-alt, 
 .key-win,
 .key-menu      { grid-column: span 3 !important; }
-.key-space     { grid-column: span 10 !important; }
+.key-space     { grid-column: span 2 !important; }
 
 .nav-section {
   display: flex;
@@ -153,8 +153,8 @@ body{
 
 .nav-cluster {
   display: grid;
-  grid-template-columns: repeat(3, 35px) !important;
-  grid-template-rows: repeat(2, 38px) !important;
+  grid-template-columns: repeat(3, 35px) ;
+  grid-template-rows: repeat(2, 38px) ;
   gap: 5px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -164,10 +164,10 @@ body{
 }
 
 .nav-cluster .key {
-  grid-column: auto !important;
-  grid-row: auto !important;
-  width: 38px !important;
-  height: 38px !important;
+  grid-column: auto ;
+  grid-row: auto ;
+  width: 38px ;
+  height: 38px ;
 }
 
 .arrow-cluster {
