@@ -20,11 +20,9 @@ form{
     box-shadow: 0 8px 75px rgba(0, 0, 0, 0.18);
 }
 .For-me {
-    display: grid;
-    grid-template-columns: 1fr 120px; 
-    column-gap: 15px;
-    padding: 0 15px;                    
-    align-items: start;
+    position: relative;                
+    padding: 0 15px;
+    padding-right: 150px;     
 }
 .For-me > * {
     grid-column: 1;                  
@@ -41,21 +39,23 @@ form{
     color: black;
 }
 .avatar {
-    grid-column: 2;                    
-    grid-row: 1 / span 5;               
-    align-self: center;                 
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);               
 }
 .avatar img{
     width: 120px;
+    display: block
 }
 .resume-btn{
+    display: inline-block;             
     padding: 3px;
     background-color: orange;
     border: none;
     border-radius: 5px;
     font-style: italic;
     font-weight: bold;
-    justify-self: start;
     margin-bottom: 20px;
     margin-top: 3px;
 }
@@ -91,30 +91,27 @@ form{
     
 }
 .practic  div {
-    display: grid;
-    grid-template-columns: 350px 1fr;
-    grid-template-rows: 1fr 1fr; 
-    column-gap: 20px;
+    position: relative;                 
     margin: 0 10px 8px;
 }
 .practic img {
-    grid-column: 1;
-    grid-row: 1 / span 2; 
-    width: 350px;
-    height: auto;
     display: block;
+    width: 350px;
+    height: auto; 
 }
 .practic a {
-    grid-column: 2;
-    grid-row: 1;
-    align-self: end; 
-    text-decoration: none;
+    position: absolute;
+    left: 370px;                        
+    right: 0;
+    bottom: 50%;                        
     color: black;
+    text-decoration: none;
 }
 .practic p {
-    grid-column: 2;
-    grid-row: 2;
-    align-self: start;                 
+    position: absolute;
+    left: 370px;
+    right: 0;
+    top: 50%;                 
 }
 .icon .end{
     padding-top: 10px;
