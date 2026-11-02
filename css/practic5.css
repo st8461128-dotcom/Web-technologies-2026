@@ -24,10 +24,6 @@ form{
     padding: 50px 80px 20px;
     padding-right: 90px;     
 }
-.For-me > * {
-    grid-column: 1;                  
-}
-
 .For-me .ki{
     padding-bottom: 15px;
 }
