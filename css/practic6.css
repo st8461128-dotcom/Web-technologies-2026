@@ -1,0 +1,452 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(31, 149, 245);
+}
+.sand{
+    background-color: burlywood;
+    padding: 80px;
+    margin-top: 513px;
+}
+.stone1{
+    position: absolute;
+    bottom: 20%;
+    background-color: grey;
+    padding: 30px; 
+    border: 1px solid black;
+    border-radius: 5px 40px 10px 2px
+}
+.stone2{
+    position: absolute;
+    bottom: 20%;
+    left: 50px;
+    background-color: grey;
+    padding: 20px; 
+    border: 1px solid black;
+    border-radius: 20px 30px 10px 2px
+}
+.stone3{
+    position: absolute;
+    bottom: 5%;
+    left: 200px;
+    background-color: grey;
+    transform: rotate(45deg);
+    padding: 20px; 
+    border: 1px solid black;
+    border-radius: 30px 10px 30px 10px; 
+    z-index: 2;
+}
+.stone4{
+    position: absolute;
+    bottom: 20%;
+    left: 450px;
+    background-color: grey;
+    transform:scaleX(1.5);
+    padding: 20px; 
+    border: 1px solid black;
+    border-radius: 30px 20px 20px 25px; 
+}
+.stone5{
+    position: absolute;
+    bottom: 2%;
+    left: 620px;
+    background-color: grey;
+    transform:scaleY(0.5);
+    padding: 50px; 
+    border: 1px solid black;
+    border-radius: 80px 80px 30px 30px; 
+    z-index: 1;
+}
+.stone6{
+    position: absolute;
+    bottom: 10%;
+    left: 900px;
+    background-color: grey;
+    transform: scaleY(0.4);
+    padding: 80px; 
+    border: 1px solid black;
+    border-radius: 80px;
+}
+.stone7{
+    position: absolute;
+    bottom: 10%;
+    left: 900px;
+    background-color: grey;
+    transform: rotate(45deg);
+    padding: 20px; 
+    border: 1px solid black;
+    border-radius: 30px 10px 30px 10px; 
+    z-index: 2;
+}
+.stone8{
+    position: absolute;
+    bottom: 0%;
+    left: 1200px;
+    background-color: grey;
+    padding: 50px; 
+    border: 1px solid black;
+    border-radius: 90px 8px 0 0;
+    z-index: 1;
+}
+.seaweed {
+  position: absolute;
+  width: 40px;
+  height: 140px;
+}
+.segment {
+  position: absolute;
+  width: 14px;
+  background-color: #2e7d32; 
+  border: 2px solid black;
+}
+.seg-1 {
+  bottom: 100%;
+  height: 400px;
+  left: 20px;
+  border-radius: 10px 0 10px 0;
+}
+.seg-2 {
+  bottom: 100%;
+  left: 40px;
+  height: 350px;
+  border-radius: 0 10px 0 10px;
+}
+.seg-3 {
+  bottom: 100%;
+  left: 100px;
+  height: 50px;
+  border-radius: 10px 10px 0 0;
+}
+.seg-4 {
+  bottom: 20%;
+  height: 400px;
+  left: 180px;
+  border-radius: 20px 10px 0 0;
+  z-index: 1;
+}
+.seg-5 {
+  bottom: 100%;
+  height: 200px;
+  left: 500px;
+  border-radius: 0 10px 0 0;
+}
+.seg-6 {
+  bottom: 100%;
+  height: 120px;
+  left: 450px;
+  border-radius: 10px 0 10px 0;
+}
+.seg-7 {
+  top: 14px;
+  height: 146px;
+  left: 680px;
+  border-radius: 10px 20px 0 0;
+  z-index: 2;
+}
+.seg-8 {
+  bottom: 40%;
+  height: 400px;
+  left: 650px;
+  border-radius: 10px 0 10px 0;
+  z-index: 1;
+}
+.seg-9 {
+  bottom: 100%;
+  height: 100px;
+  left: 1000px;
+  border-radius: 10px 5px 0 0;
+}
+.seg-10 {
+  bottom: 100%;
+  height: 450px;
+  left: 950px;
+  border-radius: 10px 10px 0 0;
+  z-index: -1;
+}
+.seg-11 {
+  bottom: 50%;
+  height: 240px;
+  left: 920px;
+  border-radius: 30px 5px 0 0;
+  z-index: 2;
+}
+.seg-12 {
+  bottom: 1%;
+  height: 280px;
+  left: 1200px;
+  border-radius: 6px 15px 0 0;
+  z-index: 1;
+}
+.bubble{
+  position: absolute;
+  border-radius: 50%;
+  padding: 35px;
+  border: 1px solid rgba(196, 234, 236, 0.864);              
+  background-color: rgba(255, 255, 255, 0.4);
+  animation: rise 8s linear infinite;
+}
+.bub-1{
+  padding: 35px;
+  height: 25px;
+  bottom: 150px;
+  left: 100px;
+  animation-duration: 7s;    
+  animation-delay: 0s;    
+  --rise: -350px;
+  --sway: 15px;
+}
+.bub-2{
+  padding: 15px;
+  height: 25px;
+  bottom: 260px;
+  left: 130px;
+  animation-duration: 9s;    
+  animation-delay: 1s;    
+  --rise: -300px; 
+  --sway: -12px; 
+}
+.bub-3{
+  padding: 25px;
+  height: 25px;
+  bottom: 80px;
+  left: 80px;
+  z-index: 1;
+  animation-duration: 6s;    
+  animation-delay: 2s;    
+  --rise: -420px; 
+  --sway: 20px
+}
+.bub-4{
+  padding: 12px;
+  height: 25px;
+  bottom: 50px;
+  left: 150px;
+  z-index: 1;
+  animation-duration: 10s;   
+  animation-delay: 0.5s;  
+  --rise: -450px; 
+  --sway: -18px;
+}
+.bub-5{
+  padding: 15px;
+  height: 25px;
+  bottom: 10px;
+  left: 100px;
+  z-index: 1;
+  animation-duration: 8s;    
+  animation-delay: 3s;    
+  --rise: -500px; 
+  --sway: 10px; 
+}
+.bub-6{
+  padding: 35px;
+  height: 25px;
+  bottom: 40px;
+  left: 300px;
+  z-index: -1;
+  animation-duration: 11s;   
+  animation-delay: 1.5s;  
+  --rise: -380px; 
+  --sway: -15px;
+}
+.bub-7{
+  padding: 15px;
+  height: 25px;
+  bottom: 150px;
+  left: 350px;
+  animation-duration: 7.5s;  
+  animation-delay: 4s;    
+  --rise: -320px; 
+  --sway: 12px;
+}
+.bub-8{
+  padding: 25px;
+  height: 25px;
+  bottom: 180px;
+  left: 280px;
+  animation-duration: 9.5s;  
+  animation-delay: 2.5s;  
+  --rise: -340px; 
+  --sway: -20px;
+}
+.bub-9{
+  padding: 25px;
+  height: 25px;
+  bottom: 240px;
+  left: 370px;
+  animation-duration: 8.5s;  
+  animation-delay: 5s;    
+  --rise: -280px; 
+  --sway: 14px;
+}
+.bub-10{
+  padding: 35px;
+  height: 25px;
+  bottom: 150px;
+  left: 500px;
+  z-index: -1;
+  animation-duration: 12s;   
+  animation-delay: 0.8s;  
+  --rise: -400px; 
+  --sway: -10px;
+}
+.bub-11{
+  padding: 15px;
+  height: 25px;
+  bottom: 100px;
+  left: 480px;
+  z-index: -1;
+  animation-duration: 6.5s;  
+  animation-delay: 3.5s;  
+  --rise: -360px; 
+  --sway: 18px;
+}
+.bub-12{
+  padding: 25px;
+  height: 25px;
+  bottom: 260px;
+  left: 490px;
+  z-index: -1;
+  animation-duration: 10.5s; 
+  animation-delay: 6s;    
+  --rise: -300px; 
+  --sway: -14px;
+}
+.bub-13{
+  padding: 28px;
+  height: 25px;
+  bottom: 70px;
+  left: 660px;
+  z-index: 1;
+  animation-duration: 7s;    
+  animation-delay: 1.2s;  
+  --rise: -430px; 
+  --sway: 16px; 
+}
+.bub-14{
+  padding: 15px;
+  height: 25px;
+  bottom: 10px;
+  left: 630px;
+  z-index: 1;
+  animation-duration: 9s;    
+  animation-delay: 4.5s;  
+  --rise: -480px; 
+  --sway: -12px;
+}
+.bub-15{
+  padding: 45px;
+  height: 25px;
+  bottom: 100px;
+  left: 800px;
+  z-index: -1;
+  animation-duration: 13s;   
+  animation-delay: 2.2s;  
+  --rise: -350px; 
+  --sway: 22px;
+}
+.bub-16{
+  padding: 15px;
+  height: 25px;
+  bottom: 90px;
+  left: 900px;
+  z-index: 1;
+  animation-duration: 8s;    
+  animation-delay: 5.5s;  
+  --rise: -370px; 
+  --sway: -16px;
+}
+.bub-17{
+  padding: 25px;
+  height: 25px;
+  bottom: 180px;
+  left: 950px;
+  z-index: -1;
+  animation-duration: 11.5s;
+  animation-delay: 0.3s;  
+  --rise: -310px; 
+  --sway: 12px;
+}
+.bub-18{
+  padding: 15px;
+  height: 25px;
+  bottom: 240px;
+  left: 980px;
+  animation-duration: 7.8s;  
+  animation-delay: 3.2s; 
+  --rise: -290px; 
+  --sway: -18px;
+}
+.bub-19{
+  padding: 18px;
+  height: 25px;
+  bottom: 100px;
+  left: 1220px;
+  z-index: 1;
+  animation-duration: 9.2s;  
+  animation-delay: 6.5s;  
+  --rise: -460px; 
+  --sway: 14px;
+}
+.bub-20{
+  padding: 15px;
+  height: 25px;
+  bottom: 200px;
+  left: 1200px;
+  z-index: 1;
+  animation-duration: 10s;   
+  animation-delay: 1.8s;  
+  --rise: -330px; 
+  --sway: -20px;
+}
+.crab img{
+  position: absolute;
+  bottom: 80px;
+  left: 1200px;
+  z-index: 0;
+  animation: crab 15s linear infinite;
+}
+@keyframes crab{
+  0% {
+    left: 90%;
+    transform: scaleX(1);
+  }
+  45% {
+    left: 1%;
+    transform: scaleX(1);
+  }
+  50% {
+    left: 1%;
+    transform: scaleX(-1);
+  }
+  95% {
+    left: 90%;
+    transform: scaleX(-1);
+  }
+  100% {
+    left: 90%;
+    transform: scaleX(1);
+  }
+}
+@keyframes rise {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-250px) translateX(15px);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-500px) translateX(-10px);
+    opacity: 0;
+  }
+}
