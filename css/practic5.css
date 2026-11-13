@@ -22,7 +22,8 @@ form{
 .For-me {
     position: relative;                
     padding: 50px 80px 20px;
-    padding-right: 90px;     
+    padding-right: 90px;
+    color:#21243D ; 
 }
 .For-me .ki{
     padding-bottom: 15px;
@@ -41,22 +42,30 @@ form{
     text-decoration: none;
     color: black;
 }
+.shadow{
+    background-color: #EDF7FA;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 85px;
+    left: 495px;
+    border-radius: 50%; 
+}
 .avatar {
     position: absolute;
-    right: 50px;
-    top: 50%;
-    transform: translateY(-55%);               
+    top: 25%;  
+    left: 500px;  
 }
 .avatar img{
-    width: 120px;
-    display: block
+    width: 150px;
+    border-radius: 50%; 
 }
 .resume-btn{
     display: inline-block;             
     padding: 8px;
     padding-left: 11px;
     padding-right: 11px;
-    background-color: rgb(235, 107, 105);
+    background-color:#FF6464;
     border: none;
     border-radius: 2px;
     color: white;
@@ -68,11 +77,11 @@ form{
     box-shadow: 0 0 0 #b1b1b1, inset 0 2px 4px rgb(0, 0, 0, 0.2);
 }
 .lb{
-    background-color: rgb(223, 245, 245);
+    background-color: #EDF7FA;
 }
 .lb header{
     padding: 80px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     padding-top: 15px;
     display: flex;
     justify-content: space-between;
@@ -80,35 +89,45 @@ form{
 .lb a{
     text-decoration: none;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 12px;
-    color: rgb(0, 189, 252);
-    padding-top: 3px;
+    font-size: 10px;
+    color: #00A8CC;
+    padding-top: 5px;
+    padding-right: 10px;
 }
 .lab{
     display: flex;
-    justify-content: space-between;
-    padding-left: 78px;
+    justify-content: center;
+    gap: 14px;
+    padding-left: 50px;
     padding-right: 60px;
     padding-bottom: 20px;
 }
 .lab a{
-    font-size: 13px;
+    font-size: 16px;
     font-weight: bold;
     font-family:Arial, Helvetica, sans-serif;
     text-decoration: none;
-    color: black;
+    color: #21243D;
+    padding-left: 4px;
+}
+.lab p{
+    font-size: 14px;
+    padding: 4px;
+    padding-top: 10px;
 }
 .lb1{
     background-color: white;
-    padding: 10px;
+    padding: 12px;
+    padding-top: 14px;
+    border-radius: 4px;
+    max-width: 260px;
 }
 .lb3{
     background-color: white;
-    padding: 10px;
-}
-.lb5{
-    background-color: white;
-    padding: 10px;
+    padding: 12px;
+    padding-top: 14px;
+    border-radius: 4px;
+    max-width: 260px;
 }
 .pz header{
     padding: 10px;
@@ -125,36 +144,53 @@ form{
 .practic img {
     display: block;
     width: 350px;
-    height: 200px;          /* однакова висота для всіх */
-    object-fit: cover;      /* обрізає зайве, не спотворюючи картинку */
-    object-position: top;   
+    height: 200px;          
+    object-fit: cover;  
+    object-position: top;
+    border-radius: 8px;   
 }
 .practic a {
     position: absolute;
     left: 370px;                        
     right: 0;
-    bottom: 50%;                        
+    bottom: 60%;                        
     color: black;
     text-decoration: none;
     font-weight: bold;
 }
-.practic p {
+.date{ 
     position: absolute;
     left: 370px;
     right: 0;
-    top: 50%;                 
+    top: 45%;
+    padding-left: 9px;
+    background-color: #142850;
+    max-width: 50px;
+    color:#FFFFFF ;
+    font-weight: bold;
+    border-radius: 12px;
+}
+.tex{
+    position: absolute;
+    left: 370px;
+    right: 0;
+    top: 65%;
 }
 .divider1{
     margin-top: 10px;
     margin-bottom: 20px;
     margin-left: 80px;
     margin-right: 75px;
+    border: none;
+    border-top:1px solid #E0E0E0;
 }
 .divider{
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 80px;
     margin-right: 75px;
+    border: none;
+    border-top:1px solid #E0E0E0;
 }
 .icon .end{
     padding-top: 40px;
