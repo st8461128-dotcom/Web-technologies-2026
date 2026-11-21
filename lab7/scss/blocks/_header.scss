@@ -1,0 +1,48 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba($color-bg, 0.9);
+  backdrop-filter: blur(6px);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: $space-sm;
+    padding-bottom: $space-sm;
+
+    @include respond($bp-mobile) {
+      flex-direction: column;
+      gap: $space-xs;
+    }
+  }
+
+  &__logo {
+    font-size: $font-size-md;
+    color: $color-accent;
+    font-weight: bold;
+  }
+
+  &__nav {
+    display: flex;
+    gap: $space-md;
+
+    @include respond($bp-mobile) {
+      gap: $space-sm;
+    }
+  }
+
+  &__link {
+    color: $color-text-muted;
+    transition: color $transition;
+
+    &:hover {
+      color: $color-text;
+    }
+
+    &--active {
+      color: $color-accent;
+    }
+  }
+}

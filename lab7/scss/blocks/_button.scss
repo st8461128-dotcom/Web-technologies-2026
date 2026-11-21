@@ -1,0 +1,34 @@
+.button {
+  display: inline-block;
+  padding: $space-sm $space-md;
+  margin: $space-xs;
+  border-radius: $radius;
+  border: 2px solid transparent;
+  font-family: inherit;
+  font-size: $font-size-base;
+  cursor: pointer;
+  transition: background $transition, transform $transition;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  &--primary {
+    background: $color-primary;
+    color: $color-text;
+
+    &:hover {
+      background: $color-primary-dark;
+    }
+  }
+
+  &--outline {
+    border-color: $color-accent;
+    color: $color-accent;
+
+    &:hover {
+      background: $color-accent;
+      color: $color-bg;
+    }
+  }
+}

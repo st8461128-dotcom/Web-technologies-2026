@@ -1,0 +1,14 @@
+.page {
+  font-family: $font-main;
+  font-size: $font-size-base;
+  color: $color-text;
+  background: linear-gradient(180deg, $color-bg 0%, $color-bg-light 100%);
+  min-height: 100vh;
+  line-height: 1.6;
+
+  &__container {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 0 $space-sm;
+  }
+}

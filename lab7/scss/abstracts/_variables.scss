@@ -1,0 +1,31 @@
+// Кольори
+$color-bg:        #0b1d3a;
+$color-bg-light:  #14305c;
+$color-primary:   #e63946;
+$color-primary-dark: #b92d38;
+$color-accent:    #ffd166;
+$color-text:      #f1faee;
+$color-text-muted: #a8b8d0;
+
+// Типографіка
+$font-main:    'Georgia', 'Times New Roman', serif;
+$font-size-base: 18px;
+$font-size-xl:   64px;
+$font-size-lg:   36px;
+$font-size-md:   24px;
+
+// Відступи та розміри
+$space-xs: 8px;
+$space-sm: 16px;
+$space-md: 32px;
+$space-lg: 64px;
+$container-width: 1100px;
+$radius: 12px;
+
+// Ефекти
+$transition: 0.3s ease;
+$shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+
+// Брейкпоінти
+$bp-tablet: 900px;
+$bp-mobile: 600px;

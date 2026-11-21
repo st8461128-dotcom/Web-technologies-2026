@@ -199,18 +199,17 @@ body{
   border-radius: 50%;
   padding: 35px;
   border: 1px solid rgba(196, 234, 236, 0.864);              
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(117, 85, 85, 0.4);
   animation: rise 8s linear infinite;
 }
 .bub-1{
   padding: 35px;
   height: 25px;
-  bottom: 150px;
+  margin: 0px;
   left: 100px;
-  animation-duration: 7s;    
-  animation-delay: 0s;    
-  --rise: -350px;
-  --sway: 15px;
+  background-color: red;
+  animation: bub-1 0.5s linear infinite alternate;
+
 }
 .bub-2{
   padding: 15px;
@@ -493,7 +492,7 @@ body{
   --rise: -330px; 
   --sway: -20px;
 }
-.crab img{
+.crab {
   position: absolute;
   bottom: 80px;
   left: 1200px;
@@ -540,4 +539,13 @@ body{
     transform: translateY(-500px) translateX(-10px);
     opacity: 0;
   }
+  
 }
+@keyframes bub-1{
+  from {
+   margin-bottom: 0;
+  }
+  to {
+   margin-bottom: 40px;
+  }
+  }

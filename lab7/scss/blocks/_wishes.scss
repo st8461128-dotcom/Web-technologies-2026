@@ -1,0 +1,60 @@
+.wishes {
+  position: relative;
+  z-index: 2;
+  padding: $space-lg 0;
+
+  &__title {
+    text-align: center;
+    font-size: $font-size-lg;
+    margin-bottom: $space-md;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $space-md;
+
+    @include respond($bp-tablet) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.wish-card {
+  height: 100%;
+  padding: $space-md;
+  background: $color-bg-light;
+  border-radius: $radius;
+  box-shadow: $shadow;
+  text-align: center;
+  transition: transform $transition;
+
+  &:hover {
+    transform: translateY(-8px) rotate(-1deg);
+  }
+
+  &__icon {
+    display: block;
+    font-size: 48px;
+    margin-bottom: $space-sm;
+  }
+
+  &__title {
+    font-size: $font-size-md;
+    color: $color-accent;
+    margin-bottom: $space-xs;
+  }
+
+  &__text {
+    color: $color-text-muted;
+  }
+
+  &--accent {
+    background: $color-primary;
+
+    .wish-card__title,
+    .wish-card__text {
+      color: $color-text;
+    }
+  }
+}
