@@ -1,0 +1,512 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    padding: 40px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.desktop{
+    width: 100%;
+    max-width: 700px;
+    border-radius: 14px;
+    padding: 20px 0 32px;
+    box-shadow: 0 8px 75px rgba(0, 0, 0, 0.18);
+}
+.mobile {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 0 24px;
+    border-radius: 14px;
+    box-shadow: 0 8px 75px rgba(0, 0, 0, 0.18);
+}
+.For-me {
+    position: relative;
+    padding: 50px 80px 20px;
+    padding-right: 90px;
+    color: #21243D;
+}
+.mobile .For-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #21243D;
+    padding: 0 0 20px;
+    max-height: 590px;
+}
+.For-me .ki {
+    padding-bottom: 15px;
+}
+.mobile .hi {
+    position: relative;
+    max-width: 200px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+.mobile .For-me p {
+    position: relative;
+    text-align: center;
+    margin: 5px 20px 10px 20px;
+}
+.mobile .resume-btn{
+    position: relative;
+    bottom: 10px;
+}
+.For-me p {
+    margin-right: 60px;
+}
+.me {
+    padding-right: 40px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    padding-bottom: 10px;
+}
+.me a {
+    text-decoration: none;
+    color: black;
+}
+.shadow {
+    background-color: #EDF7FA;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 85px;
+    left: 495px;
+    border-radius: 50%;
+}
+.mobile .shadow {
+    background-color: #EDF7FA;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 60px;
+    left: 120px;
+    border-radius: 50%;
+    z-index: -1;
+}
+ .mobile .avatar {     
+    position: static;
+    margin-top: 50px;
+}
+.avatar {
+    position: absolute;
+    top: 25%;
+    left: 500px;
+}
+.avatar img {
+    width: 150px;
+    border-radius: 50%;
+    height: 150px;
+    object-fit: cover;
+}
+.resume-btn {
+    display: inline-block;
+    padding: 8px 11px;
+    background-color: #FF6464;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.resume-btn:active {
+    transform: translateY(3px);
+    box-shadow: 0 0 0 #b1b1b1, inset 0 2px 4px rgb(0, 0, 0, 0.2);
+}
+.lb {
+    background-color: #EDF7FA;
+}
+.lb header {
+    padding: 15px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.mobile .lb header {
+    padding: 15px 80px;
+    display: flex;
+    justify-content: center;
+}
+.lb a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    color: #00A8CC;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+.lab {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    padding-left: 50px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+}
+.mobile .lab {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px 20px;
+}
+.lab a {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #21243D;
+    padding-left: 4px;
+}
+.lab p {
+    font-size: 14px;
+    padding: 4px;
+    padding-top: 10px;
+}
+.lb1,
+.lb3 {
+    background-color: white;
+    padding: 14px 12px 12px;
+    border-radius: 4px;
+    max-width: 260px;
+}
+.mobile .lb1,
+.mobile .lb3{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 14px 12px 12px 12px;
+    border-radius: 4px;
+    max-width: 400px;
+}
+.pz header {
+    padding: 20px 10px;
+}
+.mobile .pz header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mobile .pz .p {
+    padding-left: 0
+}
+.pz .p {
+    padding-left: 70px;
+}
+.practic div {
+    position: relative;
+    margin: 0 80px 8px;
+}
+.mobile .practic div {
+    position: relative;
+    padding: 1px 1px 1px 16px;
+    margin: 0;
+}
+.practic img {
+    display: block;
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 8px;
+}
+.mobile .practic img {
+    display: block;
+    width: 367px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 8px;
+}
+.practic a {
+    position: absolute;
+    left: 370px;
+    right: 0;
+    bottom: 60%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.mobile .practic a {
+    position: relative;
+    top: 10px;
+    left: 0;
+    right: 0;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.date {
+    position: absolute;
+    left: 370px;
+    right: 0;
+    top: 45%;
+    padding-left: 9px;
+    background-color: #142850;
+    max-width: 50px;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 12px;
+}
+.mobile .date {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 20px;
+    padding-left: 9px;
+    background-color: #142850;
+    max-width: 50px;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 12px;
+}
+.tex {
+    position: absolute;
+    left: 370px;
+    right: 0;
+    top: 65%;
+}
+.mobile .tex {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 30px;
+}
+.divider1 {
+    margin: 10px 75px 20px 80px;
+    border: none;
+    border-top: 1px solid #E0E0E0;
+}
+.divider {
+    margin: 20px 75px 20px 80px;
+    border: none;
+    border-top: 1px solid #E0E0E0;
+}
+.mobile .divider {
+    margin: 50px 22px 20px 15px;
+    border: none;
+    border-top: 1px solid #E0E0E0;
+}
+.icon .end {
+    padding-top: 40px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.mobile .icon .end {
+    padding-top: 200px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.icon img {
+    width: 25px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.mobile footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 11px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.link {
+    margin-left: 90%;
+    position: fixed;
+    top: 92%;
+    background-color: rgb(222, 44, 35);
+    border-radius: 5px;
+    padding: 8px;
+}
+.link a {
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+}
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+.btn-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.btn-menu img {
+    width: 28px;
+    display: block;
+}
+.menu .me {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    z-index: 10;
+    padding: 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.menu .me.open {
+    display: flex;
+}
+.menu .me a {
+    padding: 12px 20px;
+    white-space: nowrap;
+}
+.menu .me a:hover {
+    background: #EDF7FA;
+}
+/* ================= СМАРТФОНИ ================= */
+@media (max-width: 700px) {
+    body {
+        padding: 0;
+        gap: 0;
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        max-width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .mobile .For-me {
+        max-height: none;          /* не обрізає вміст */
+        padding: 0 0 20px;
+    }
+    .mobile .shadow {
+        left: 50%;                
+        transform: translateX(-50%);
+    }
+    .mobile .For-me h1 {
+        font-size: clamp(24px, 7vw, 32px);
+    }
+    .mobile .lb header {
+        padding: 15px 16px;
+    }
+    .mobile .lb1,
+    .mobile .lb3 {
+        max-width: none;
+    }
+    .mobile .practic div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px 12px;
+        padding: 0;
+        margin: 0 16px;
+    }
+    .mobile .practic img {
+        width: 100%;              
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+    .mobile .practic a {
+        position: static;
+        width: 100%;
+        margin-top: 4px;
+    }
+    .mobile .date,
+    .mobile .tex {
+        position: static;
+        margin: 0;
+    }
+    .mobile .date {
+        max-width: none;
+        padding: 0 10px;
+    }
+    .mobile .divider {
+        margin: 20px 16px;
+    }
+    .mobile .icon .end {
+        padding-top: 40px;      
+    }
+    .link {
+        margin-left: 0;
+        top: auto;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+/* ================= ПЛАНШЕТИ ================= */
+@media (min-width: 701px) and (max-width: 1023px) {
+    body {
+        gap: 24px;
+        padding: 30px 16px;
+    }
+    .desktop {
+        flex: 0 0 700px;
+    }
+    .mobile {
+        display: none;
+    }
+    .link {
+        margin-left: 0;
+        top: auto;
+        bottom: 16px;
+        right: 16px;
+    }
+    html body {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    body .desktop {
+        max-width: none;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    body .desktop .avatar {
+        left: auto;
+        right: 6%;          /* відступ від правого краю */
+    }
+    body .desktop .shadow {
+        left: auto;
+        right: calc(6% - 5px);
+    }
+    body .desktop .For-me p {
+        margin-right: 220px;   /* текст не доходить до фото */
+    }
+}
+/* ================= НОУТБУКИ ================= */
+@media (min-width: 1024px) and (max-width: 2600px) {
+    body {
+        gap: 24px;
+        padding: 30px 16px;
+    }
+    .desktop {
+        flex: 0 0 700px;   /* не стискається, щоб аватар і текст не налізали */
+    }
+    .mobile {
+        display: none;
+    }
+    .link {
+        margin-left: 0;
+        top: auto;
+        bottom: 16px;
+        right: 16px;
+    }
+}
